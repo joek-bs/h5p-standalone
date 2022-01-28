@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <title>teach4waste - H5P content</title>
+    <style>
+        html,
+        body,
+        #teach4waste-h5p-container {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id='teach4waste-h5p-container'></div>
+    <script type="text/javascript" src="../../assets/main.bundle.js"></script>
+    <script>
+        
+        // HIER DEN NAMEN DES UNTERORDNERS EINFÜGEN
+        const folderName = 'geschichte-der-abfallwirtschaft';
+        
+        const el = document.getElementById('teach4waste-h5p-container');
+        const options = {
+            h5pJsonPath:  '../../assets/' + folderName,
+            frameJs: '../../assets/frame.bundle.js',
+            frameCss: '../../assets/styles/h5p.css',
+            }
+        new H5PStandalone.H5P(el, options);
+    </script>
+</body>
+</html>
