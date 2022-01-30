@@ -16,7 +16,7 @@
     <script>
         
         // HIER DEN NAMEN DES UNTERORDNERS EINFÜGEN
-        const folderName = 'geschichte-der-abfallwirtschaft';
+        const folderName = 'geschichte-der-abfallanalyse';
         // HIER SPRACHE ALS LAENDERKUERZEL
         const language = 'de';
         
@@ -26,6 +26,7 @@
             frameJs: '../../assets/frame.bundle.js',
             frameCss: '../../assets/styles/h5p.css',
             };
+            console.log(options.h5pJsonPath);
         new H5PStandalone.H5P(el, options);
     </script>
 </body>
